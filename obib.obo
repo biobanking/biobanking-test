@@ -1,0 +1,644 @@
+format-version: 1.2
+data-version: releases/2018-12-03
+remark: biobanking test
+import: http://purl.obolibrary.org/obo/obib/imports/obi_import.owl
+import: http://purl.obolibrary.org/obo/obib/imports/ro_import.owl
+ontology: obib
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0004872>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0048018>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBIB_00000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GO_0004872> (<http://purl.obolibrary.org/obo/GO_0004872>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GO_0004872> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GO_0048018> (<http://purl.obolibrary.org/obo/GO_0048018>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GO_0048018> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBIB_00000000> (obib)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBIB_00000000> owl:Thing)\n\n\n)
+
+[Term]
+id: BFO:0000002
+is_a: BFO:0000001
+
+[Term]
+id: BFO:0000003
+is_a: BFO:0000001
+
+[Term]
+id: BFO:0000004
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000015
+is_a: BFO:0000003
+
+[Term]
+id: BFO:0000017
+is_a: BFO:0000020
+
+[Term]
+id: BFO:0000019
+is_a: BFO:0000020
+
+[Term]
+id: BFO:0000020
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000023
+is_a: BFO:0000017
+
+[Term]
+id: BFO:0000031
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000040
+is_a: BFO:0000004
+
+[Term]
+id: CARO:0000000
+is_a: CARO:0030000
+
+[Term]
+id: CARO:0000003
+is_a: CARO:0000006
+
+[Term]
+id: CARO:0000006
+is_a: BFO:0000040
+is_a: CARO:0000000
+
+[Term]
+id: CARO:0030000
+is_a: BFO:0000004
+
+[Term]
+id: CL:0000000
+is_a: CARO:0000003
+
+[Term]
+id: CL:0000540
+is_a: CL:0000000
+
+[Term]
+id: GO:0003674
+is_a: BFO:0000015
+
+[Term]
+id: GO:0003824
+is_a: GO:0003674
+
+[Term]
+id: GO:0008150
+is_a: BFO:0000015
+
+[Term]
+id: GO:0016301
+is_a: GO:0016772
+
+[Term]
+id: GO:0016740
+is_a: GO:0003824
+
+[Term]
+id: GO:0016772
+is_a: GO:0016740
+
+[Term]
+id: IAO:0000003
+is_a: IAO:0000009
+
+[Term]
+id: IAO:0000005
+is_a: IAO:0000033
+
+[Term]
+id: IAO:0000007
+is_a: IAO:0000033
+
+[Term]
+id: IAO:0000009
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000010
+is_a: IAO:0000104
+
+[Term]
+id: IAO:0000015
+is_a: BFO:0000019
+
+[Term]
+id: IAO:0000027
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000030
+is_a: BFO:0000031
+
+[Term]
+id: IAO:0000033
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000037
+is_a: IAO:0000038
+
+[Term]
+id: IAO:0000038
+is_a: IAO:0000309
+
+[Term]
+id: IAO:0000064
+is_a: IAO:0000104
+
+[Term]
+id: IAO:0000078
+is_a: IAO:0000102
+
+[Term]
+id: IAO:0000098
+is_a: IAO:0000033
+
+[Term]
+id: IAO:0000100
+is_a: IAO:0000027
+
+[Term]
+id: IAO:0000101
+is_a: IAO:0000308
+
+[Term]
+id: IAO:0000102
+is_a: IAO:0000027
+
+[Term]
+id: IAO:0000104
+is_a: IAO:0000033
+
+[Term]
+id: IAO:0000178
+is_a: BFO:0000040
+
+[Term]
+id: IAO:0000179
+is_a: IAO:0000038
+
+[Term]
+id: IAO:0000180
+is_a: IAO:0000038
+
+[Term]
+id: IAO:0000183
+is_a: IAO:0000038
+
+[Term]
+id: IAO:0000184
+is_a: IAO:0000038
+
+[Term]
+id: IAO:0000225
+is_a: IAO:0000102
+
+[Term]
+id: IAO:0000308
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000309
+is_a: IAO:0000308
+
+[Term]
+id: IAO:0000310
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000409
+is_a: IAO:0000102
+
+[Term]
+id: NCBITaxon:10239
+is_a: OBI:0100026
+
+[Term]
+id: NCBITaxon:117571
+is_a: NCBITaxon:7742
+
+[Term]
+id: NCBITaxon:2
+is_a: OBI:0100026
+
+[Term]
+id: NCBITaxon:2157
+is_a: OBI:0100026
+
+[Term]
+id: NCBITaxon:2759
+is_a: OBI:0100026
+
+[Term]
+id: NCBITaxon:314146
+is_a: NCBITaxon:40674
+
+[Term]
+id: NCBITaxon:32523
+is_a: NCBITaxon:117571
+
+[Term]
+id: NCBITaxon:32524
+is_a: NCBITaxon:32523
+
+[Term]
+id: NCBITaxon:33154
+is_a: NCBITaxon:2759
+
+[Term]
+id: NCBITaxon:33213
+is_a: NCBITaxon:33154
+
+[Term]
+id: NCBITaxon:40674
+is_a: NCBITaxon:32524
+
+[Term]
+id: NCBITaxon:7742
+is_a: NCBITaxon:33213
+
+[Term]
+id: NCBITaxon:9606
+is_a: NCBITaxon:314146
+
+[Term]
+id: OBI:0000011
+is_a: BFO:0000015
+
+[Term]
+id: OBI:0000014
+is_a: OBI:0000017
+
+[Term]
+id: OBI:0000017
+is_a: BFO:0000023
+
+[Term]
+id: OBI:0000018
+is_a: OBI:0000947
+
+[Term]
+id: OBI:0000023
+is_a: IAO:0000100
+
+[Term]
+id: OBI:0000047
+is_a: BFO:0000040
+
+[Term]
+id: OBI:0000094
+is_a: OBI:0000011
+
+[Term]
+id: OBI:0000112
+is_a: BFO:0000023
+
+[Term]
+id: OBI:0000245
+is_a: BFO:0000040
+
+[Term]
+id: OBI:0000450
+is_a: OBI:0000245
+
+[Term]
+id: OBI:0000456
+is_a: IAO:0000005
+
+[Term]
+id: OBI:0000457
+is_a: OBI:0000094
+
+[Term]
+id: OBI:0000458
+is_a: OBI:0000456
+
+[Term]
+id: OBI:0000571
+is_a: BFO:0000023
+
+[Term]
+id: OBI:0000648
+is_a: IAO:0000100
+
+[Term]
+id: OBI:0000659
+is_a: OBI:0000011
+
+[Term]
+id: OBI:0000663
+is_a: OBI:0200000
+
+[Term]
+id: OBI:0000684
+is_a: IAO:0000005
+
+[Term]
+id: OBI:0000700
+is_a: OBI:0000663
+
+[Term]
+id: OBI:0000704
+is_a: OBI:0200166
+
+[Term]
+id: OBI:0000707
+is_a: OBI:0200000
+
+[Term]
+id: OBI:0000713
+is_a: IAO:0000010
+
+[Term]
+id: OBI:0000726
+is_a: OBI:0200000
+
+[Term]
+id: OBI:0000727
+is_a: OBI:0200171
+is_a: OBI:0200175
+
+[Term]
+id: OBI:0000749
+is_a: OBI:0000707
+
+[Term]
+id: OBI:0000792
+is_a: OBI:0200171
+
+[Term]
+id: OBI:0000835
+is_a: BFO:0000040
+
+[Term]
+id: OBI:0000947
+is_a: BFO:0000023
+
+[Term]
+id: OBI:0000953
+is_a: OBI:0000047
+is_a: OBI:0100051
+
+[Term]
+id: OBI:0000963
+is_a: IAO:0000009
+
+[Term]
+id: OBI:0001000
+is_a: IAO:0000310
+
+[Term]
+id: OBI:0001930
+is_a: OBI:0001933
+
+[Term]
+id: OBI:0001933
+is_a: IAO:0000030
+
+[Term]
+id: OBI:0002076
+is_a: BFO:0000040
+
+[Term]
+id: OBI:0002205
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002210
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002215
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002216
+is_a: OBI:0002215
+
+[Term]
+id: OBI:0002219
+is_a: OBI:0002215
+
+[Term]
+id: OBI:0002224
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002232
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002243
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002256
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002270
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002279
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002284
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002287
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002290
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002298
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002306
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002310
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002314
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002326
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002341
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002356
+is_a: OBI:0001930
+
+[Term]
+id: OBI:0002357
+is_a: OBI:0002356
+
+[Term]
+id: OBI:0002363
+is_a: OBI:0002356
+
+[Term]
+id: OBI:0100026
+is_a: BFO:0000040
+
+[Term]
+id: OBI:0100051
+is_a: BFO:0000040
+
+[Term]
+id: OBI:0200000
+is_a: OBI:0000011
+
+[Term]
+id: OBI:0200033
+is_a: OBI:0000792
+
+[Term]
+id: OBI:0200041
+is_a: OBI:0200171
+is_a: OBI:0200175
+
+[Term]
+id: OBI:0200042
+is_a: OBI:0200175
+
+[Term]
+id: OBI:0200050
+is_a: OBI:0200175
+
+[Term]
+id: OBI:0200051
+is_a: OBI:0200050
+
+[Term]
+id: OBI:0200111
+is_a: OBI:0000011
+
+[Term]
+id: OBI:0200166
+is_a: IAO:0000005
+
+[Term]
+id: OBI:0200171
+is_a: OBI:0200000
+
+[Term]
+id: OBI:0200172
+is_a: OBI:0200166
+
+[Term]
+id: OBI:0200175
+is_a: OBI:0200000
+
+[Term]
+id: OBI:0200178
+is_a: OBI:0200166
+
+[Term]
+id: OBI:0200179
+is_a: OBI:0200166
+
+[Term]
+id: OBI:0200188
+is_a: OBI:0200172
+
+[Term]
+id: OBI:0200190
+is_a: OBI:0200111
+
+[Term]
+id: OBIB:00000000
+name: obib
+
+[Term]
+id: PATO:0000001
+is_a: BFO:0000020
+
+[Term]
+id: PATO:0000186
+is_a: PATO:0001237
+
+[Term]
+id: PATO:0001237
+is_a: BFO:0000019
+
+[Term]
+id: PATO:0002201
+is_a: PATO:0000186
+
+[Term]
+id: PATO:0002202
+is_a: PATO:0002201
+
+[Term]
+id: PATO:0002203
+is_a: PATO:0002201
+
+[Term]
+id: PATO:0002204
+is_a: PATO:0002201
+
+[Term]
+id: Subset
+is_a: IAO:0000102
+
+[Term]
+id: UBERON:0000465
+is_a: BFO:0000040
+
+[Term]
+id: UBERON:0002048
+is_a: UBERON:0000465
+
+[Term]
+id: UO:0000001
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000002
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000003
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000005
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000006
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000051
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000095
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000105
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000270
+is_a: IAO:0000003
+
+[Term]
+id: UO:0000280
+is_a: IAO:0000003
+
