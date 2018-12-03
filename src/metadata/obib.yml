@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/obib
+
+idspace: OBIB
+base_url: /obo/obib
+
+products:
+- obib.owl: https://raw.githubusercontent.com/biobanking/biobanking-test/master/obib.owl
+- obib.obo: https://raw.githubusercontent.com/biobanking/biobanking-test/master/obib.obo
+
+term_browser: ontobee
+example_terms:
+- OBIB_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking-test/v
+
+- prefix: /tracker/
+  replacement: https://github.com/biobanking/biobanking-test/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OBIB?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking-test/master/
