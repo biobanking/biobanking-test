@@ -3,7 +3,7 @@
 
 # biobanking-test
 
-This ontology... YOUR DESCRIPTION HERE
+This repository was built using ontology development kit aiming for testing.
 
 ## Versions
 
